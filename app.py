@@ -107,7 +107,7 @@ async def send_nsfw(message: types.Message):
 Porn Vietnamese
 """
 @dp.message_handler(commands=['vids'])
-async def send_nsfw(message: types.Message):
+async def send_porn(message: types.Message):
     """
     This handler will be called when user sends images command
     """

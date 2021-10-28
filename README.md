@@ -1,4 +1,4 @@
-# Flask RestfullAPI with JSON
+# Telegram BOT by Jucni Bie
 
 
 ### Install
@@ -6,5 +6,9 @@
 pip install -r requirements.txt
 ```
 
-### Code
-Update your object/data type in `database.py`
+### Environment
+- Telegram Token: `API_TOKEN` get from Father bot
+- Imgur : `IMGUR_TOKEN`, `NSFW_TOKEN`
+
+### Imgur Albums
+- Add imgur albums list in `utils/config.py`

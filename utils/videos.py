@@ -13,13 +13,16 @@ def get_vid_url():
 """
 Tiktok downloader without watermark
 - https://hamod.ga/api/tiktokWithoutWaterMark.php?u=https://vt.tiktok.com/ZSJ75tXXa/
+source = f'https://godownloader.com/api/tiktok-no-watermark-free?url={link}&key=godownloader.com'
+https://tdl.heran.xyz/api/download
 """
 
 
 def get_tiktok(link):
-    source = f'https://godownloader.com/api/tiktok-no-watermark-free?url={link}&key=godownloader.com'
-    resp = req.get(source).text
-    return json.loads(resp)['video_no_watermark']
+    payload = {'url': link}
+    source = 'https://tdl.heran.xyz/api/download'
+    resp = req.post(source, data=payload)
+    return json.loads(resp.text)['video']['urls'][0]
 
 
 # Get link Douyin without watermark
